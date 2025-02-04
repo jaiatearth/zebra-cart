@@ -1,0 +1,34 @@
+.about-us {
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 80px; /* To ensure content doesn't overlap the header */
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #232f3e; /* Dark color for the header */
+    }
+  
+    .content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+  
+      p {
+        margin-bottom: 20px;
+      }
+  
+      strong {
+        font-weight: bold;
+        color: #ff9900; /* Highlighting key information */
+      }
+    }
+  
+    .content p {
+      margin-bottom: 15px;
+    }
+  }
+  

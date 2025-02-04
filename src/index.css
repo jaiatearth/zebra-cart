@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Applying Open Sans globally */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333; /* Dark text color for contrast */
+}
+
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color */
+}
+
+a:hover {
+  color: #ff9900; /* Color on hover */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #232f3e; /* Dark color for headings */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Container for general layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Box shadow for elevated elements */
+.box-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles for consistency */
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff9900;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e68900;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ff9900;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px; /* Adjust for smaller screens */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    .nav {
+      padding: 10px 0;
+    }
+  }
+}
+
+/* src/styles/common.scss */
+.home-button,
+.back-button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.home-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
